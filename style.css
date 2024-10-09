@@ -1,10 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte-primaria:'Krona One';
+    --fonte-secondaria: 'Montserrat'; 
+}
 body{
     display: flex;
     flex-direction: column;
     background-color: black;
 }
 .cabecalho{
-    font-family: sans-serif;
+    font-family: var(--fonte-primaria);
     color: aqua;
     padding: 2% 0% 0% 12.5%;
 }
@@ -14,7 +21,7 @@ body{
 }
 .cabecalho__menu__item{
     color: aqua;
-    font-family: sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
@@ -25,10 +32,10 @@ body{
 .cabecalho__menu__item:hover{
     background-color: aqua;
     color: black;
+    transform: scale(90%);
 }
 .apresentacao{
     display: flex;
-    font-family: sans-serif;
     color: aqua;
     padding: 8% 12.5%;
     gap: 82px;
@@ -39,14 +46,20 @@ body{
     border: 2px solid aqua;
     border-radius: 100%;
     width: 100%;
-    
-
+}
+.apresentacao__texto{
+    font-family: var(--fonte-secondaria);
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 .moldura__img{
     width: 50%;
 }
 .moldura__texto{
     width: 50%;
+}
+.apresentacao__titulo{
+    font-family: var(--fonte-primaria);
 }
 .apresentacao__texto__links{
     display: flex;
@@ -59,9 +72,9 @@ body{
     border-radius: 8px;
     color: aqua;
     display: flex;
-    font-family: sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     gap: 16px;
     justify-content: center;
     padding: 21.5px 0;
@@ -70,19 +83,29 @@ body{
     width: 50%;
     transition: .2s;
 }
+.apresentacao__texto__links__texto{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
 .apresentacao__texto__links__botoes:hover{
     background-color: aqua;
     color: black;    
-}
-.apresentacao__texto__links__botoes img:hover{
-    fill: black;
+    transform: scale(90%);
+    transition: 0,5s;
 }
 .rodape{
+    
     background-color: aqua;
     padding: 24px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    font-size:1.5rem;
     
+    
+}
+.rodape__texto{
+    font-family: var(--fonte-secondaria);
+    font-size:1.5rem;
+    font-weight: 400;
 }
